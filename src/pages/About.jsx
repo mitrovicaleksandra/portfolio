@@ -24,8 +24,8 @@ export default function About() {
       <div className="shell skills-row"><h2>Core Expertise</h2><div className="skills-pills">{['Financial Planning & Analysis','Operating & Long-Range Planning','Commercial & Partner Economics','Payments & Monetization','Financial Modeling (3-Statement, DCF)','AI Agents & Workflow Automation','Business Cases & Investment Analysis','M&A & Strategic Projects'].map(t=><span key={t}>{t}</span>)}</div></div>
     </section>
     <section className="dark-section personal"><div className="shell personal-grid"><div><p className="eyebrow gold">LOCATION & WORK STYLE</p><h2>Global & Remote</h2><p>Experience working across Canada and Europe, with an international perspective and remote-first mindset.</p></div>
-      <div><p className="eyebrow gold">BEYOND WORK</p><h2>What Drives Me</h2><p>Curiosity, continuous learning, building new things, and an active life that includes dance, travel, and swimming.</p></div>
-      <div className="personal-cards">{[['Dance','✦'],['Travel','↗'],['Wellness','◌']].map(([t,s])=><div key={t}><span>{s}</span><strong>{t}</strong></div>)}</div>
+      <div><p className="eyebrow gold">BEYOND WORK</p><h2>What Drives Me</h2><p>Curiosity, continuous learning, building new things, and an active life that includes teaching, travel, and swimming.</p></div>
+      <div className="personal-cards">{[['Teaching','✦'],['Travel','↗'],['Wellness','◌']].map(([t,s])=><div key={t}><span>{s}</span><strong>{t}</strong></div>)}</div>
     </div></section>
   </>;
 }

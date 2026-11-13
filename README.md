@@ -1,82 +1,176 @@
-# Aleksandra Mitrović — Strategic Finance Portfolio
 
-A working, responsive **React + Vite** implementation of the six portfolio-page designs created in this conversation. It uses a navy/cream/gold visual system and a cropped architectural image based on the mockups.
+# AM | Strategic Finance & FP&A
 
-## What's included
+A professional portfolio showcasing strategic finance,
+financial planning and analysis, commercial strategy,
+financial modeling, and AI-enabled finance workflows.
 
-- Home — headline, highlights, expertise, impact preview, automation preview.
-- Expertise — planning, commercial finance, AI/automation, and technical skills.
-- Impact — interactive case-study categories, seven case-study cards, clickable details.
-- AI & Automation — workflow architecture, selectable agent concepts, technology stack.
-- Approach — five-step working framework and key principles.
-- About — background, highlights, skill tags, global profile.
-- Contact — a configurable contact link (email/LinkedIn **not configured yet**).
-- Responsive navigation, mobile layouts, accessible modal dialogs.
+Built with React and Vite using a responsive
+navy, cream, and gold design system.
 
-**Important:** This is a functioning **portfolio website**, not a deployed agent platform. The agents are presented as concepts. No live NetSuite, OpenAI, Claude, email, or database connections are implemented.
+## Portfolio Sections
 
-## Start locally
+- **Home** — Professional overview, financial impact,
+  expertise, and automation highlights.
+- **Expertise** — Strategic finance, FP&A,
+  commercial finance, and technical capabilities.
+- **Impact** — Interactive financial case studies,
+  measurable outcomes, and methodology summaries.
+- **AI & Automation** — Finance automation workflows,
+  agent concepts, and practical technology applications.
+- **Approach** — Financial analysis and strategic
+  decision-making framework.
+- **About** — Professional background and core capabilities.
+- **Contact** — Professional contact information
+  and optional LinkedIn integration.
 
-1. Install Node.js (LTS).
-2. Open a terminal in this folder.
-3. Run:
+## Features
 
-```bash
-npm install
-npm run dev
-```
+- Responsive React website
+- React Router navigation
+- Modular page and component architecture
+- Interactive case-study filters
+- Case-study detail dialogs
+- Premium case-study paywall interface
+- Optional Stripe Payment Links
+- AI and finance workflow demonstrations
+- Mobile-friendly navigation
 
-4. Open the local link shown in your terminal (usually `http://localhost:5173`).
+## Premium Case Studies
 
-## Personalize before publishing
+The portfolio includes a premium analysis section
+within its case-study dialogs.
 
-### `src/data.js`
+Premium materials may include:
 
-Edit the `profile` object:
+- Financial modeling methodologies
+- Scenario and sensitivity analysis
+- Illustrative financial models
+- Commercial and operational decision frameworks
+- Downloadable financial templates
 
-- `name`, `headline`, `tagline`, `intro`
-- `contactEmail`: enter your real address (currently blank).
-- `linkedinUrl`: add your public LinkedIn profile link (currently blank).
-- `resumePath`: optional future resume download path (currently blank).
+Stripe Payment Links can be configured for
+individual case studies.
 
-Review **all** case-study descriptions, categories, and reported metrics. They were drafted from the project context; only publish disclosures that you are comfortable making and have permission to share.
+**Payment verification, automated content unlocking,
+and authenticated premium access require additional
+backend implementation.**
 
-### Portrait
+Do not enable live checkout until purchased materials
+can be delivered securely.
 
-The About page intentionally uses a branded **AM placeholder**, not the mockup's AI-generated portrait. When you have a photo you want to use, put it into `public/assets/` and replace the `.portrait-placeholder` element in `src/App.jsx` with an `<img />`, then adjust CSS.
+## Technology Stack
 
-### Hero photo
+- React
+- Vite
+- JavaScript / JSX
+- React Router
+- Lucide React
+- CSS
+- GitHub
+- Stripe Payment Links (optional)
 
-The hero artwork is at `public/assets/vienna-dome.webp`. It is a cropped image from the generated mockup and can be replaced with a licensed photograph or your own image.
+## Project Structure
 
-### Design vs. full implementation
+src/
+  components/
+    Header.jsx
+    Footer.jsx
+    PageHero.jsx
+    SectionLead.jsx
+    CaseCard.jsx
+    CaseDialog.jsx
+    Icon.jsx
 
-This matches the style and content structure of the six mockups, rather than pixel-perfectly reproducing static screenshots. On mobile, the layout adapts. The Impact filters and modal and AI agent selection are live React interactions. The AI concepts do not execute finance processes.
+  pages/
+    Home.jsx
+    Expertise.jsx
+    Impact.jsx
+    Automation.jsx
+    Approach.jsx
+    About.jsx
+    Contact.jsx
 
-## Deploy
+  App.jsx
+  data.js
+  main.jsx
+  styles.css
 
-```bash
-npm run build
-```
+public/
+  assets/
+    toronto-skyline.png
 
-Upload `dist/` to a static host, or connect a GitHub repository to Vercel or Netlify:
+## Local Development
 
-- Build command: `npm run build`
-- Output directory: `dist`
-- Framework preset: Vite
-- Set SPA rewrites/fallback to `/index.html` for direct navigation to `/impact`, `/about`, etc.
+Install Node.js LTS.
 
-### Example rewrite configuration for Vercel
+Install dependencies:
 
-The included `vercel.json` handles SPA route fallback.
+    npm install
 
-## Next possible phases
+Start the development server:
 
-1. Replace the photo placeholder, wire email/LinkedIn, and review content.
-2. Add case-study detail pages, charts, screenshots, and optional password protection for proprietary work.
-3. Add actual demos for forecasting, variance analysis, or the Oria agent framework; those will require a Python/API backend, authentication, and appropriate data controls.
-4. Publish with custom domain and analytics (with consent/privacy considerations).
+    npm run dev
 
-## Asset attribution
+Open the local URL shown in the terminal.
 
-The architectural hero image is cropped from an AI-generated portfolio mockup produced in this conversation. It is not a photograph of the portfolio owner. Do not use the illustrative AI-generated portrait from the About mockup as a real-person portrait.
+## Production Build
+
+Create a production build:
+
+    npm run build
+
+The compiled website will be generated
+inside the `dist/` directory.
+
+## Deployment
+
+The portfolio can be deployed to a static
+hosting provider supporting React and Vite.
+
+Build command:
+
+    npm run build
+
+Output directory:
+
+    dist
+
+Configure single-page application route fallback
+to serve `index.html` for client-side routes
+when required by the hosting provider.
+
+The project includes a Vercel configuration
+for SPA routing.
+
+## Branding
+
+The portfolio uses the **AM** monogram as its
+primary visual identity.
+
+The design emphasizes financial expertise,
+strategic thinking, technology, and measurable impact.
+
+## Content and Confidentiality
+
+Case studies summarize selected professional
+experiences at a high level.
+
+Financial examples, methodologies, and downloadable
+templates should use appropriately anonymized
+or illustrative data.
+
+No confidential employer information,
+proprietary financial data, or private API
+credentials published.
+
+## AI & Automation Disclaimer
+
+The AI and automation section includes illustrative
+workflow architectures and conceptual finance agents.
+
+These concepts do not represent active integrations
+with financial systems or autonomous execution.
+
+Live integrations require separate backend development,
+authentication, data validation, and approval controls.
